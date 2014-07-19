@@ -1,5 +1,4 @@
 (function() {
-	var type = 'div';
 	
 	var attr = {
 		'id': 'ycs_header',
@@ -16,14 +15,23 @@
     'background-color': '#000000',
 	};
 
-	putDom(type, attr, css);
+	var cls = [
+		'alert',
+		'alert-info',
+	];
+
+	putDom('html', 'div', attr, css, cls)
 
 	var selector = 'body';
+
+	var attr = {
+
+	};
 
 	var css = {
 		'top': '25px',
 	}
 
-	setDom(selector, NaN, css);
+	setDom(selector, attr, css);
 
 })();

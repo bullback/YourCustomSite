@@ -1,7 +1,12 @@
-function putDom(type, attr, css) {
+function putDom(selector, type, attr, css, cls) {
+  if(typeof(attr)==='undefined')
+    attr = NaN;
+  if(typeof(css)==='undefined')
+    css = NaN;
+  if(typeof(cls)==='undefined')
+    cls = NaN;
+  
   var elem = $("<" + type + "></" + type + ">");
-
-  console.log(elem);
 
   $.each(attr, function(index, value) {
     elem.attr(index, value);
@@ -11,7 +16,11 @@ function putDom(type, attr, css) {
     elem.css(index, value);
   });
 
-  elem.appendTo('html');
+  $.each(cls, function(index, value) {
+    elem.addClass(value);
+  });
+
+  elem.appendTo(selector);
 
   return;
 }
