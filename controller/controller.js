@@ -6,17 +6,24 @@
 	};
 
 	var css = {
-		'position': 'absolute',
-    'top': '50%',
-    'left': '50%',
-    'width': '100px',
-    'height': '100px',
-    'margin-top': '-25px',
-    'margin-left': '-25px',
+		'position': 'fixed',
+    'top': '0',
+    'left': '0',
+    'width': '100%',
+    'height': '25px',
     'z-index': '10000',
     'border': '1px solid #000000',
     'background-color': '#000000',
 	};
 
 	putDom(type, attr, css);
+
+	var selector = 'body';
+
+	var css = {
+		'top': '25px',
+	}
+
+	setDom(selector, NaN, css);
+
 })();

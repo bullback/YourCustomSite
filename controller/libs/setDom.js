@@ -1,7 +1,10 @@
-function putDom(type, attr, css) {
-  var elem = $("<" + type + "></" + type + ">");
+function setDom(selector, attr, css) {
+  if(typeof(attr)==='undefined')
+    attr = NaN;
+  if(typeof(css)==='undefined')
+    css = NaN;
 
-  console.log(elem);
+  var elem = $(selector);
 
   $.each(attr, function(index, value) {
     elem.attr(index, value);
@@ -10,8 +13,6 @@ function putDom(type, attr, css) {
   $.each(css, function(index, value) {
     elem.css(index, value);
   });
-
-  elem.appendTo('html');
 
   return;
 }

@@ -12,6 +12,7 @@
       "static/jquery.min.js",
       "controller/libs/putDom.js",
       "controller/libs/getDom.js",
+      "controller/libs/setDom.js",
       "controller/controller.js"
     ]
   }]
