@@ -1,10 +1,10 @@
 (function() {
-	
-	var attr = {
+	var attr, css, cls;
+	attr = {
 		'id': 'ycs_header',
 	};
 
-	var css = {
+	css = {
 		'position': 'fixed',
     'top': '0',
     'left': '0',
@@ -15,23 +15,21 @@
     'background-color': '#000000',
 	};
 
-	var cls = [
+	cls = [
 		'alert',
 		'alert-info',
 	];
 
 	putDom('html', 'div', attr, css, cls)
 
-	var selector = 'body';
-
-	var attr = {
+	attr = {
 
 	};
 
-	var css = {
+	css = {
 		'top': '25px',
 	}
 
-	setDom(selector, attr, css);
+	setDom('body', attr, css);
 
 })();
