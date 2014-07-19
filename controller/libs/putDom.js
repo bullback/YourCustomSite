@@ -1,21 +1,14 @@
-function putDom() {
-  var elem = $("<div></div>");
-  
-  elem.attr({
-    'id': 'elem_id',
+function putDom(type, attr, css) {
+  var elem = $("<" + type + "></" + type + ">");
+
+  console.log(elem);
+
+  $.each(attr, function(index, value) {
+    elem.attr(index, value);
   });
 
-  elem.css({
-    'position': 'absolute',
-    'top': '50%',
-    'left': '50%',
-    'width': '50px',
-    'height': '50px',
-    'margin-top': '-25px',
-    'margin-left': '-25px',
-    'z-index': '10000',
-    'border': '1px solid #000000',
-    'background-color': '#ffffff',
+  $.each(css, function(index, value) {
+    elem.css(index, value);
   });
 
   elem.appendTo('body');
