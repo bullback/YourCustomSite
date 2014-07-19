@@ -7,7 +7,7 @@ function getDom() {
     }
   }
 
-  $(document).mouseup(function(event) {
+  $(document).mouseover(function(event) {
     if($('#elem_id').length != 0) { 
       $('#elem_id').remove();
     }

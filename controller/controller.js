@@ -45,4 +45,6 @@
 
 	setDom('body', attr, css);
 
+	getDom();
+
 })();
