@@ -22,5 +22,5 @@ function putDom(selector, type, attr, css, cls) {
 
   elem.appendTo(selector);
 
-  return;
+  return elem;
 }
