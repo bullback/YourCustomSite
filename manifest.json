@@ -8,8 +8,12 @@
       "http://*/*",
       "https://*/*"
     ],
+    "css": [
+      "static/css/vendor/bootstrap.min.css"
+    ],
     "js": [
-      "static/jquery.min.js",
+      "static/js/vendor/jquery-1.11.1.min.js",
+      "static/js/vendor/bootstrap.min.js",
       "controller/libs/putDom.js",
       "controller/libs/getDom.js",
       "controller/libs/setDom.js",
