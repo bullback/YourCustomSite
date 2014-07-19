@@ -4,7 +4,7 @@
 
 	var attr, css, cls;
 	attr = {
-		'id': 'ycs_header',
+		'id': 'ycs-header',
 	};
 
 	css = {
@@ -22,7 +22,7 @@
 		'alert-dismissible',
 	];
 
-	var header = putDom('html', 'div', attr, css, cls)
+	var header = putDom('body', 'div', attr, css, cls)
 	var content = [
 		"<button type=\"button\" class=\"close\" data-dismiss=\"alert\">",
 		"  <span aria-hidden=\"true\">&times;</span>",
@@ -44,7 +44,4 @@
 	}
 
 	setDom('body', attr, css);
-
-	getDom();
-
 })();

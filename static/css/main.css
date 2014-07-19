@@ -1,0 +1,7 @@
+.ycs-outline-hovered {
+  outline: 1px solid #ff0000 !important;
+}
+ 
+.ycs-outline-clicked {
+  outline: 1px solid #0000ff !important;
+}

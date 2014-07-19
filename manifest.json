@@ -9,7 +9,8 @@
       "https://*/*"
     ],
     "css": [
-      "static/css/vendor/bootstrap.min.css"
+      "static/css/vendor/bootstrap.min.css",
+      "static/css/main.css"
     ],
     "js": [
       "static/js/vendor/jquery-1.11.1.min.js",
