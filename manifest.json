@@ -9,7 +9,7 @@
       "https://*/*"
     ],
     "css": [
-      "static/css/vendor/bootstrap.min.css",
+      "static/css/vendor/bootstrap.css",
       "static/css/main.css"
     ],
     "js": [
