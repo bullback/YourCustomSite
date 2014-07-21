@@ -5,3 +5,7 @@
 .ycs-outline-clicked {
   outline: 1px solid #0000ff !important;
 }
+
+#ycs-handler #handler .modal-dialog {
+  margin: 30px auto auto 30px;
+}

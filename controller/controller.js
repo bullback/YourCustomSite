@@ -21,6 +21,7 @@
 	];
 
 	var wrapper = putDom('body', 'div', attr, css, cls)
+
 	var content = [
 	    "<div class=\"alert alert-info alert-dismissible\" role=\"alert\" style=\"height:50px;\">",
 		"  <button type=\"button\" class=\"close\" data-dismiss=\"alert\">",
@@ -32,8 +33,6 @@
 		"  <p class=\"pull-right\" style=\"margin-top: 1px;\"><i class=\"fa fa-file-text-o\"></i> 레이아웃 제작하기&nbsp;&nbsp;</p>",
 	    "</div>",
 	].join('\n');
-
-	wrapper.append(content);
 
 	attr = {
 		'id': 'ycs-handler',
@@ -52,6 +51,8 @@
 		'ycs',
 	];
 
+	wrapper.append(content);
+
 	var handler = putDom('body', 'div', attr, css, cls)
 
 	var content = [
@@ -60,23 +61,23 @@
 		"    <div class=\"modal-content\">",
 		"      <div class=\"modal-header\">",
 		"        <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>",
-		"        <h4 class=\"modal-title\" id=\"handlerLabel\">Modal title</h4>",
-		"      </div>",
-		"      <div class=\"modal-body\">",
-		"        ...",
+		"        <h4 class=\"modal-title\" id=\"handlerLabel\">효과 적용</h4>",
 		"      </div>",
 		"      <div class=\"modal-footer\">",
-		"        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>",
-		"        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>",
+		"        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">",
+		"          <i class=\"fa fa-arrows\"></i>이동",
+		"        </button>",
+		"        <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">",
+		"          <i class=\"fa fa-trash-o\"></i>삭제",
+		"        </button>",
 		"      </div>",
 		"    </div>",
 		"  </div>",
 		"</div>",
 	].join('\n');
-	
+
 	handler.append(content);
 	
-
 	attr = {
 
 	};
