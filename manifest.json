@@ -14,6 +14,7 @@
     ],
     "js": [
       "static/js/vendor/jquery-1.11.1.min.js",
+      "static/js/vendor/jquery-ui.min.js",
       "static/js/vendor/bootstrap.min.js",
       "controller/libs/putDom.js",
       "controller/libs/getDom.js",
