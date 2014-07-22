@@ -3,6 +3,21 @@
 	$('head').append("<link href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\">");
 
 	var attr, css, cls;
+
+	attr = {
+		'id': 'ycs-status',
+	}
+
+	css = {
+		'display': 'none',
+	}
+
+	cls = [
+		'ycs',
+	]
+
+	var status = putDom('html', 'div', attr, css, cls);
+
 	attr = {
 		'id': 'ycs-wrapper',
 	};
@@ -20,7 +35,7 @@
 		'ycs',
 	];
 
-	var wrapper = putDom('body', 'div', attr, css, cls)
+	var wrapper = putDom('body', 'div', attr, css, cls);
 
 	var content = [
 	    "<div class=\"alert alert-info alert-dismissible\" role=\"alert\" style=\"height:50px;\">",
