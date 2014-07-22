@@ -7,6 +7,11 @@ $(document).ready(function() {
 
       if(event.type == 'click') {
         $target.addClass('ycs-clicked');
+        $('#ycs-handler #handler').modal({
+          backdrop: 'static',
+          keyboard: false
+        })
+
         $('#ycs-handler #handler').modal('show');
         /*
         $.ajax({
@@ -35,12 +40,24 @@ $(document).ready(function() {
   });
 
   $('#ycs-handler #handler #locate').bind('click', function(event) {
-    console.log('locate');
     $('.ycs-clicked').draggable();
+    $('#ycs-handler #handler #locate').addClass('clicked btn-danger').removeClass('btn-info');
+    $('#ycs-handler #handler #locate').empty().append("<i class=\"fa fa-undo\"></i>&nbsp;취소");
   });
 
   $('#ycs-handler #handler #delete').bind('click', function(event) {
-    console.log('delete');
     $('.ycs-clicked').hide();
+    $('#ycs-handler #handler #delete').addClass('clicked btn-danger').removeClass('btn-info');
+    $('#ycs-handler #handler #delete').empty().append("<i class=\"fa fa-undo\"></i>&nbsp;취소");
+  });
+
+  $('#ycs-handler #handler #cancel').bind('click', function(event) {
+    console.log('cancel');
+    $('.ycs-clicked').removeClass('ycs-clicked').removeClass('ycs-outline-hovered').removeClass('ycs-outline-clicked');
+  });
+
+  $('#ycs-handler #handler .close').bind('click', function(event) {
+    console.log('cancel');
+    $('.ycs-clicked').removeClass('ycs-clicked').removeClass('ycs-outline-hovered').removeClass('ycs-outline-clicked');
   });
 });
